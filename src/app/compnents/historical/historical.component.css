@@ -1,0 +1,13 @@
+.interval-container {
+  font-size: 24px;
+  padding: 10px
+}
+
+li {
+  cursor: pointer;
+}
+
+li.active {
+  font-weight: 600;
+  color: #007bff
+}

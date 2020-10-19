@@ -1,0 +1,11 @@
+<div class="chart-container">
+<div class='interval-container'>
+  <span>Intervals</span>
+  <ul class="list-unstyled d-inline">
+    <li *ngFor="let interval of intervalOptions" [ngClass]="{'active':interval==selectedInterval}"
+        class="list-item list-inline-item pl-3 " (click)="selectInterval(interval)">{{interval}}</li>
+  </ul>
+</div>
+<div echarts [options]="chartOption" class="chart"></div>
+</div>
+
